@@ -1,4 +1,12 @@
-﻿body,
+﻿body {
+  background: no-repeat center top fixed;
+  background-image: url("../img/back.jpg");
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 html {
   height: 100%;
   background-repeat: no-repeat;
@@ -10,10 +18,23 @@ html {
   font-weight: bold;
 }
 
+.header {
+  background-repeat: no-repeat !important;
+  background-image: linear-gradient(
+    rgb(229, 243, 167),
+    rgb(198, 224, 79)
+  ) !important;
+  margin: 0px !important;
+  margin-left: 0px !important;
+  padding-left: 0px !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  height: 200px;
+}
 .title {
-  margin: 5ex;
-  color: #a52a2a;
-  font-family: Bookman l;
+  color: #1c1e21;
+  font-family: "Times New Roman";
+  font-size: 5.5vw;
 }
 
 .center {
@@ -24,22 +45,46 @@ html {
   float: left;
 }
 
-.right {
+.diretito {
   float: right;
 }
 
 .col-50 {
   width: 50%;
 }
+.col-100 {
+  width: 100%;
+}
 
 .height-420 {
   height: 420px;
+}
+
+.height-100 {
+  height: 100px;
 }
 
 .height-440 {
   height: 440px;
 }
 
+.height-auto {
+  height: auto;
+}
+.font-55 {
+  font-size: 5.5vw;
+}
+.sub-title {
+  height: auto;
+  font-size: 5.5vw;
+  text-align: center;
+  color: #e4e6eb;
+  background-color: #1c1e21;
+  margin-top: 20px;
+  line-height: 1;
+  font-family: "Times New Roman";
+  padding: 10px;
+}
 .background-one {
   color: black;
   background-color: #d3d3d3;
@@ -52,6 +97,19 @@ html {
   background-color: #1c1e21;
   padding: 20px;
   margin-top: 20px;
+  height: auto;
+}
+
+.background-three {
+  color: #e4e6eb;
+  background-color: #1c1e21;
+  margin-top: 20px;
+  line-height: 1;
+  font-family: "Times New Roman";
+}
+
+.background-balon {
+  margin-top: 30px;
 }
 
 .btn {
@@ -61,7 +119,7 @@ html {
   -webkit-user-select: none;
   user-select: none;
   cursor: default;
-  margin: 20px;
+  margin: 20px 0px;
 }
 
 .card-container.card {
@@ -84,8 +142,8 @@ html {
 .card {
   background-color: #f7f7f7;
   /* just in case there no content*/
-  padding: 20px 25px 30px;
-  margin: 0 auto 25px;
+  padding: 20px 25px 30px 30px;
+  margin: auto 25px;
   margin-top: 50px;
   /* shadows and rounded borders */
   -moz-border-radius: 2px;
